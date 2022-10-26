@@ -69,7 +69,7 @@ def utterance_spk(nb_utt_spk):
         j += nb
     return utt_spk
 
-def todelete(xvectors):
+"""def todelete(xvectors):
     """
     Delete BAs that are null for all utterances
     :param xvectors:
@@ -81,7 +81,7 @@ def todelete(xvectors):
         if res[i]:
             idx.append(i)
     v = np.delete(xvectors, idx, axis=1)
-    return v, idx
+    return v, idx"""
 
 def profil_spk(xvectors, utt_per_spk, BA):
     """
